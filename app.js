@@ -34,7 +34,7 @@ let data = [
 const info = document.querySelector('#info');
 
 let details = data.map(function(item) {
-  return '<div>' + item.name + ' ' + 'is ' + item.age + ' years old' + '</div>';
+  return '<div onclick="changeText(this)">Click on this text!>' + item.name + ' ' + 'is ' + item.age + ' years old' + '</div>';
 });
 
 info.innerHTML = details.join('\n');

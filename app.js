@@ -33,7 +33,9 @@ let data = [
 
 const info = document.querySelector('#info');
 
+
 let details = data.map(function(item) {
+    let phrase 
   return '<div onclick="changeText(this)">Click on this text!>' + item.name + ' ' + 'is ' + item.age + ' years old' + '</div>';
 });
 
@@ -41,5 +43,7 @@ info.innerHTML = details.join('\n');
 
 
 function changeText(id) {
-    id.innerHTML = "Ooops!";
+
+
+    id.innerHTML = "thank you!";
   }
